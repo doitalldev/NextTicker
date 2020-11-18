@@ -1,10 +1,10 @@
-import React from "react";
+import React from "react"
 
 const CoinCard = ({ coin }) => {
-  const { name, symbol, quote, total_supply, last_updated, tags } = coin;
-  const price = Math.round(quote.USD.price * 100) / 100;
+  const { name, symbol, quote, total_supply, last_updated, tags } = coin
+  const price = Math.round(quote.USD.price * 100) / 100
 
-  const percentChange1h = Math.round(quote.USD.percent_change_1h * 100) / 100;
+  const percentChange1h = Math.round(quote.USD.percent_change_1h * 100) / 100
 
   return (
     <div className="max-w-sm overflow-hidden rounded shadow-lg ">
@@ -17,7 +17,7 @@ const CoinCard = ({ coin }) => {
             ${price} / {symbol}
           </span>
         </div>
-        <div>Percent Change Last Hour: {percentChange1h}%</div>
+        <div>Percent Change Last Hour: {quote.USD.percent_change_1h}%</div>
         <div>Total Supply: {total_supply}</div>
       </div>
       <div className="px-6 pt-4 pb-2">
@@ -33,7 +33,7 @@ const CoinCard = ({ coin }) => {
           : ""}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CoinCard;
+export default CoinCard
