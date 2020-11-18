@@ -1,8 +1,11 @@
 # Next Ticker
 
-A NextJS and TailwindCSS app to show off current cryptocurrency prices
-Hosted through Vercel
+NextTicker is a NextJS proof of concept app that utlizes newer NextJS technologies like getServerSideProps() in order to render cryptocurrency info on every request.
 
-##To-Do
+I also use TailwindCSS for the styling.
 
-Data not being requested. Make sure Next is hydrating it and not resolving at build time.
+### Plans:
+
+- Add search bar
+- Separate coin card into their own page
+- Tag Filtering
